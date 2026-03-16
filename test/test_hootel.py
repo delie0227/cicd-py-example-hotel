@@ -26,7 +26,7 @@ class TestHootel(object):
     @allure.title("Hootel Login")
     @allure.description("A belépés tesztelése")
     @allure.severity(allure.severity_level.TRIVIAL)
-    @allure.tag("login")
+    @allure.tag("login", "hotel", "e2e")
 
     def test_login(self):
         login_btn = self.browser.find_element(By.XPATH, '//a[@class="nav-link"]')
